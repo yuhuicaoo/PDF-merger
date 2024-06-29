@@ -9,7 +9,7 @@ os.environ["TK_SILENCE_DEPRECATION"] = "1"
 def merge_pdfs(folder_path):
     merger = PdfMerger()
 
-    # Assuming all files in the folder_path are PDFs
+    # Assuming all the pdfs u want to merge are in the folder_path and are ordered already
     pdf_files = [
         f for f in os.listdir(folder_path) if f.endswith(".pdf") and f != "merged.pdf"
     ]
